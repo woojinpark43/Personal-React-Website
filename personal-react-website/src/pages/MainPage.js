@@ -1,16 +1,20 @@
 import React from "react";
 import { HeaderBar } from '../components/index';
-import { Grid } from "../elements";
+import { Grid, Text } from "../elements";
 
 const MainPage = (props) => {
     return(
         <React.Fragment>
-            <Grid bg='yellow' height='100vh'>
-                <Grid height='10vh' bg='red'>
+            <Grid height='100vh'>
+                <Grid height='7vh' bg='#99ccff' position='relative'>
                     <HeaderBar/>
                 </Grid>
-                <Grid height='90vh' bg='green'>H T</Grid>
-                <Grid height='30vh' bg='purple'>Foo</Grid>
+                <Grid height='93vh' bg='#e6f2ff'>H T</Grid>
+                <Grid height='300px' bg='black'>
+                    <Text color='white' align='center'> Woojin Park</Text>
+                    <Text color='white' align='center'> wj36park@gmail.com</Text>
+                    <Text color='white' align='center'> wj36park@gmail.com</Text>
+                </Grid>
             </Grid>
         </React.Fragment>
     );

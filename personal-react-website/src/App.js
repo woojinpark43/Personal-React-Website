@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import { Route, BrowserRouter } from "react-router-dom";
 
-import MainPage from "./pages/MainPage";
+import { MainPage, AboutMe } from "./pages/index";
 
 class App extends React.Component {
   constructor(props){
@@ -14,6 +14,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <Route path='/' exact component={MainPage}/>
+        <Route path='/aboutme' component={AboutMe}/>
       </BrowserRouter>
     );
   }
