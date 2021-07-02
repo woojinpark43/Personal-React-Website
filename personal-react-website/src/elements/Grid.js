@@ -9,10 +9,12 @@ const Grid = (props) => {
         width,
         height,
         margin,
+        marginTop,
         padding,
         bottom,
         align,
         bg,
+        transform,
         children
     } = props;
 
@@ -23,9 +25,11 @@ const Grid = (props) => {
         width: width,
         height: height,
         margin: margin,
+        marginTop: marginTop,
         padding: padding,
         bottom: bottom,
         align: align,
+        transform: transform,
         bg: bg,
     };
 
@@ -43,9 +47,11 @@ Grid.defaultProps = {
     height: '100%',
     padding: false,
     margin: false,
+    marginTop: false,
     bottom: false,
     align: false,
     bg: false,
+    transform: false,
 };
 
 const GridBox = styled.div`
@@ -53,6 +59,7 @@ const GridBox = styled.div`
     width: ${(props) => props.width};
     height: ${(props) => props.height};
     box-sizing: border-box;
+    ${(props) => (props.marginTop ? `margin-top: ${props.marginTop};` : '')}
     ${(props) => (props.bottom ? `bottom: ${props.bottom};` : '')}
     ${(props) => (props.padding ? `padding: ${props.padding};` : '')}
     ${(props) => (props.margin ? `margin: ${props.margin};` : '')}
@@ -60,6 +67,7 @@ const GridBox = styled.div`
     ${(props) => (props.align ? `align-items ${props.align};` : '')}
     ${(props) => (props.flex ? `display: flex; flex: ${props.flex};` : '')}
     ${(props) => (props.flex_direction ? `flex-direction: ${props.flex_direction};` : '')}
+    ${(props) => (props.transform ? `transform: ${props.transform};` : '')}
 `;
 
 export default Grid;

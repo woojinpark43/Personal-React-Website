@@ -5,7 +5,7 @@ import { Grid, Text, StyleButton, StyledLink } from '../elements/index'
 const HeaderBar = (props) => {
     return(
         <React.Fragment>
-            <Grid height='5vh' position='absolute' bottom='0px'>
+            <Grid height='50px' position='absolute' bottom='0px'>
                 <ButtonGroup>
                     <StyledLink to='/' ><StyleButton><Text color='white'>Main Page</Text></StyleButton></StyledLink>
                     <StyledLink to='/aboutme' ><StyleButton><Text color='white'>About me</Text></StyleButton></StyledLink>
