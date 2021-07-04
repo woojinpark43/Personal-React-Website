@@ -1,15 +1,40 @@
 import React from "react";
-import { HeaderBar } from '../components/index';
-import { Grid, Text } from "../elements";
+import { HeaderBar, Video, ZoomPanel, SlidePanel } from '../components/index';
+import { Grid, Text, Image } from "../elements";
+import './MainPage.css'
+
+const data = {
+    SlidePanelContent: 
+    [
+        'Welcome to my personal React website!',
+        '제 리액트 웹사이트에 오신것을 환영합니다!',
+        '欢迎浏览我的个人React网站'
+    ]
+}
 
 const MainPage = (props) => {
     return(
         <React.Fragment>
-            <Grid height='100vh'>
+            <Grid height='100vh' width='100%'>
                 <Grid height='50px' bg='#99ccff' position='relative'>
                     <HeaderBar/>
                 </Grid>
-                <Grid height='93vh' bg='#e6f2ff'>H T</Grid>
+                <div style={{ overflow: 'hidden', height: '500px' }}>
+                    <Video playing='true' muted={true} controls={false} className='main-page-video'/>
+                </div>
+                <Grid height='210px' marginTop='20px'>
+                    <div class="main-page-self-image">
+                        <hr />
+                            <div className='image-wrapper'>
+                                <Image size='200'/>
+                            </div>
+                        <hr />
+                    </div>
+                </Grid>
+                <Grid height='90px' marginTop='20px' bg='black'>
+                    <SlidePanel textArray={data.SlidePanelContent} textSize={'53px'}/>
+                </Grid>
+                <ZoomPanel/>
                 <Grid height='300px' bg='black'>
                     <Text color='white' align='center'> Woojin Park</Text>
                     <Text color='white' align='center'> wj36park@gmail.com</Text>
