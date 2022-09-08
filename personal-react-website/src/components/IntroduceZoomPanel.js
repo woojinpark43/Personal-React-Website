@@ -42,9 +42,11 @@ const IntroduceZoomPanel = (props) => {
         >
           <h1 class="text-3xl md:text-4xl font-bold mb-4"> Hi I am Woojin </h1>
           <p class="text-gray-500 text-sm md:text-base">
-            I'm a Software Developer with Data Skills. I have mainly worked as a
-            Tech Lead at Startups 🚀 Now I'm working as Web Frontend Lead at
-            Healingpaper that serves Gangnamunni.
+            I'm a Software Developer with web dev skills. I have mainly worked
+            as a Web Frontend developer and have expeprience with React, NodeJS,
+            Docker and much more 🚀 Now I'm am finishing my last year of study
+            at the University of Toronto and currently searching for a career
+            path where I can elaborate my programming skills 😆
           </p>
         </div>
       </Paper>

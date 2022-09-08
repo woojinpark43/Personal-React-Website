@@ -5,6 +5,8 @@ import IntroduceZoomPanel from "./IntroduceZoomPanel";
 import SlidePanel from "./SlidePanel";
 import ViewportZoomMainPageIcon from "./ViewportZoomMainPageIcon";
 import ViewportZoomPanel from "./ViewPortZoomPanel";
+import ExperienceZoomPanel from "./ExperienceZoomPanel";
+import OpenSourceZoomPanel from "./OpenSourceZoomPanel";
 
 export {
   HeaderBar,
@@ -14,4 +16,6 @@ export {
   SlidePanel,
   ViewportZoomPanel,
   ViewportZoomMainPageIcon,
+  ExperienceZoomPanel,
+  OpenSourceZoomPanel,
 };

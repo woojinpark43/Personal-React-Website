@@ -1,4 +1,5 @@
 import React from "react";
+import styled from 'styled-components';
 import { ButtonGroup } from "@material-ui/core";
 import { Grid, Text, StyleButton, StyledLink } from "../elements/index";
 
@@ -31,9 +32,14 @@ const HeaderBar = (props) => {
               >
                 <Text color="black"> | </Text>
               </div>
-              <StyledLink to="/aboutme">
+              <AStyled 
+              href="http://aboutme.dothome.co.kr/web/"
+              // target="_blank"
+              // class="link"
+              // rel="noreferrer"
+              >
                 <Text color="black"> About me</Text>
-              </StyledLink>
+              </AStyled>
             </ol>
           </nav>
         </div>
@@ -41,6 +47,15 @@ const HeaderBar = (props) => {
     </React.Fragment>
   );
 };
+
+const AStyled = styled.a`
+    text-decoration: none;
+    color: white;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
 
 const buttonStyle = {
   background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",

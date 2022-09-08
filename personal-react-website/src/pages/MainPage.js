@@ -13,6 +13,11 @@ import "./MainPage.css";
 const MainPage = (props) => {
   return (
     <React.Fragment>
+      <img
+        style={{ position: "absolute", top: "0", right: "0", border: "0" }}
+        src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+        alt="Fork me on GitHub"
+      ></img>
       <Grid height="100vh" width="100%">
         <div style={{ width: "50%", transform: "translate(50%, 0%)" }}>
           <HeaderBar />

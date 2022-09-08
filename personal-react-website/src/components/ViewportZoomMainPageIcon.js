@@ -56,9 +56,9 @@ ZoomIcon.defaultProps = {
 };
 
 const data = [
-  ["https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg", ""],
-  ["https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg", ""],
-  ["https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg", ""],
+  ["https://img.icons8.com/color/48/000000/linkedin.png", ""],
+  ["https://img.icons8.com/ios-filled/50/000000/github.png", ""],
+  ["https://img.icons8.com/ios-filled/50/000000/personal-trainer.png", ""],
 ];
 
 const ViewportZoomMainPageIcon = (props) => {

@@ -1,5 +1,9 @@
 import React from "react";
-import { IntroduceZoomPanel } from "./index";
+import {
+  IntroduceZoomPanel,
+  ExperienceZoomPanel,
+  OpenSourceZoomPanel,
+} from "./index";
 import handleViewport from "react-in-viewport";
 
 const ViewportZoomPanel = (props) => {
@@ -14,7 +18,7 @@ const ViewportZoomPanel = (props) => {
     // const text = inViewport ? 'In viewport' : 'Not in viewport';
     return (
       <div
-        style={{ display: "flex", justifyContent: "center" }}
+        style={{ justifyContent: "center" }}
         className="viewport-block"
         ref={forwardedRef}
       >
@@ -23,6 +27,18 @@ const ViewportZoomPanel = (props) => {
           delayedCount={delayedCount}
           width={width}
           height={height}
+        />
+        <ExperienceZoomPanel
+          checked={checked}
+          delayedCount={delayedCount + 300}
+          width={width}
+          height={height + 300}
+        />
+        <OpenSourceZoomPanel
+          checked={checked}
+          delayedCount={delayedCount + 500}
+          width={width}
+          height={height + 300}
         />
       </div>
     );
