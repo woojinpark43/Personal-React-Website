@@ -27,6 +27,7 @@ const IntroduceZoomPanel = (props) => {
   const classes = useStyles();
 
   return (
+    <div>
     <Zoom
       in={checked}
       style={{ transitionDelay: checked ? `${delayedCount}ms` : "0ms" }}
@@ -42,15 +43,22 @@ const IntroduceZoomPanel = (props) => {
         >
           <h1 class="text-3xl md:text-4xl font-bold mb-4"> Hi I am Woojin </h1>
           <p class="text-gray-500 text-sm md:text-base">
-            I'm a Software Developer with web dev skills. I have mainly worked
-            as a Web Frontend developer and have expeprience with React, NodeJS,
-            Docker and much more 🚀 Now I'm am finishing my last year of study
-            at the University of Toronto and currently searching for a career
-            path where I can elaborate my programming skills 😆
+          I am a dedicated Software Developer who is passionate about coding. Throughout my internship at Informatica, 
+            a software development company, I specialized in Frontend development and gained valuable 
+            experience working with technologies like React, NodeJS, Docker, and more. 🚀 
+            Having recently graduated with a specialist degree in Computer Science from the University of Toronto,
+            I am now eager to take my career to the next level and further expand my programming skills.
+            My passion lies in Backend development, particularly using the Java Spring framework.
+            To prepare for this transition, I've undertaken several personal projects to gain hands-on
+            experience in this field.
+
+            My goal is to continue my journey in software development, contributing to innovative
+             projects and becoming a well-rounded developer capable of delivering end-to-end solutions. 😆
           </p>
         </div>
       </Paper>
     </Zoom>
+    </div>
   );
 };
 

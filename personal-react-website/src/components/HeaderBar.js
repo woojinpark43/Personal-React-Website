@@ -33,7 +33,7 @@ const HeaderBar = (props) => {
                 <Text color="black"> | </Text>
               </div>
               <AStyled 
-              href="http://aboutme.dothome.co.kr/web/"
+              href="https://woojinpark-aboutme.netlify.app/"
               // target="_blank"
               // class="link"
               // rel="noreferrer"

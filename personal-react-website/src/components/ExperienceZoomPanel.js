@@ -54,18 +54,24 @@ const ExperienceZoomPanel = (props) => {
             }}
           >
             <div style={{ display: "inline-block", paddingRight: "25px" }}>
-              <h4 style={{ margin: "0px" }}>
+              <h3 style={{ margin: "0px" }}>
                 Informatica Software, Limited - Main Division
-              </h4>
+              </h3>
+              <div style={{
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+            }}>
+              <Image src="https://img.icons8.com/color/48/00000/internet.png" size="20" shape="circle"/>
               <a
-                style={{ margin: "0px", marginTop: "10px" }}
                 href="https://www.informatica.com/"
                 target="_blank"
                 class="link"
                 rel="noreferrer"
               >
-                https://www.informatica.com/
+                Informatica Website
               </a>
+              </div>
               <p style={{ margin: "0px", marginTop: "10px" }}>
                 <b>Software Engineering Intern</b>
               </p>
@@ -79,29 +85,15 @@ const ExperienceZoomPanel = (props) => {
             >
               <li>
                 <p>
-                  Joined the{" "}
-                  <a
-                    style={{ margin: "0px", marginTop: "10px" }}
-                    href="https://www.informatica.com/products/master-data-management.html#fbid=qRV7CR-i0pV"
-                    target="_blank"
-                    class="link"
-                    rel="noreferrer"
-                  >
-                    Master Data Management (MDM)
-                  </a>{" "}
-                  Product Research and Development team at Informatica to
-                  develop a product where leading financial services, life
-                  sciences, manufacturing, healthcare, and retail companies, as
-                  well as government organizations worldwide, rely on.
+                  Worked on MDM.Next product, which involves implementation of new features, enhancements and bugs.
                 </p>
               </li>
               <li>
-                <p>Mainly worked on developing frontend as a React developer</p>
+                <p>Mainly worked on UI features of MDM using React while actively collaborating with cross-functional teams for successful project delivery</p>
               </li>
               <li>
                 <p>
-                  Wrote clean and maintainable product code with Automation
-                  tests (CodeceptJS) and unit tests (Jest)
+                Wrote clean and maintainable product code with Automation tests (CodeceptJS) and unit tests (Jest)
                 </p>
               </li>
             </ul>

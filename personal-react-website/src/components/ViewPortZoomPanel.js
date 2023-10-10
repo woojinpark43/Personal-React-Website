@@ -18,7 +18,7 @@ const ViewportZoomPanel = (props) => {
     // const text = inViewport ? 'In viewport' : 'Not in viewport';
     return (
       <div
-        style={{ justifyContent: "center" }}
+        style={{ justifyContent: "center", display: "flex", flexDirection: "column" }}
         className="viewport-block"
         ref={forwardedRef}
       >
@@ -26,7 +26,7 @@ const ViewportZoomPanel = (props) => {
           checked={checked}
           delayedCount={delayedCount}
           width={width}
-          height={height}
+          height={height + 300}
         />
         <ExperienceZoomPanel
           checked={checked}

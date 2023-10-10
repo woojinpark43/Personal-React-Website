@@ -26,6 +26,12 @@ const ZoomIcon = (props) => {
   const classes = useStyles();
 
   return (
+    <a
+                href={data[1]}
+                target="_blank"
+                class="link"
+                rel="noreferrer"
+              >
     <Zoom
       in={checked}
       style={{
@@ -45,6 +51,8 @@ const ZoomIcon = (props) => {
         </div>
       </Paper>
     </Zoom>
+    
+    </a>
   );
 };
 
@@ -56,9 +64,9 @@ ZoomIcon.defaultProps = {
 };
 
 const data = [
-  ["https://img.icons8.com/color/48/000000/linkedin.png", ""],
-  ["https://img.icons8.com/ios-filled/50/000000/github.png", ""],
-  ["https://img.icons8.com/ios-filled/50/000000/personal-trainer.png", ""],
+  ["https://img.icons8.com/color/48/000000/linkedin.png", "https://www.linkedin.com/in/woojin-park/"],
+  ["https://img.icons8.com/ios-filled/50/000000/github.png", "https://github.com/woojinpark43"],
+  ["https://img.icons8.com/color/48/000000/instagram.png", "https://www.instagram.com/wp__00_/"],
 ];
 
 const ViewportZoomMainPageIcon = (props) => {
